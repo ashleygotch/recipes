@@ -1,6 +1,7 @@
 import logo from './recipe.jpg';
 import './App.css';
 
+//Todo: make GET request to node server to retrieve first page of recipes
 function App() {
   return (
     <div className="App">

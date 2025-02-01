@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// Todo: add initial page to retrieve all recipes
 root.render(
   <React.StrictMode>
     <App />
