@@ -25,11 +25,27 @@ export default function App() {
       ) : recipes.length === 0 ? (
         <p>No recipes yet.</p>
       ) : (
-        <ul>
+        <div>
           {recipes.map((r) => (
-            <li key={r.id}>{r.title}</li>
+            <div
+              key={r.id}
+              style={{
+                border:"1px solid #ddd",
+                borderRadius:12,
+                padding:16,
+                marginBottom:16,
+              }}
+            >
+              <h2 style={{marginTop:0}}>{r.title}</h2>
+              {r.description && <p>{r.description}</p>}
+              {r.tags && (
+                <p>
+                  <strong>Tags:</strong> {r.tags}
+                </p>
+              )}
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
